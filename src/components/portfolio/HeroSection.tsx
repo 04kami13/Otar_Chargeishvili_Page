@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
+import { put } from "@vercel/otar-chargeishvili-page-blob";
 
 const HeroSection = () => {
   return (
@@ -30,7 +31,7 @@ const HeroSection = () => {
                 variant="hero" 
                 size="lg" 
                 className="group"
-                onClick={() => window.open('/src/assets/resume.pdf', '_blank')}
+                onClick={() => window.open('https://yibjmvstrsmsjkcq.public.blob.vercel-storage.com/resume.pdf', '_blank')}
                 >
                 <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                 View My Resume
