@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
+import { put } from "@vercel/otar-chargeishvili-page-blob";
 
 const ResumeSection = () => {
   return (
@@ -43,7 +44,7 @@ const ResumeSection = () => {
                   className="group"
                   onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/src/assets/resume.pdf';
+                  link.href = 'https://yibjmvstrsmsjkcq.public.blob.vercel-storage.com/resume.pdf';
                   link.download = 'Otar_Chargeishvili_Resume.pdf';
                   link.click();
                   }}
