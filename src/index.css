@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System for Otar Chargeishvili
+All colors MUST be HSL. Custom design tokens for modern IT professional portfolio.
+*/
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 210 33% 17%;
+    
+    /* Professional IT Theme */
+    --primary: 210 33% 17%; /* Dark blue #1E2A38 */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 97%; /* Light gray #F7F7F7 */
+    --secondary-foreground: 210 33% 17%;
+    
+    --accent: 204 89% 61%; /* Accent blue #3FA9F5 */
+    --accent-foreground: 0 0% 100%;
+    
+    /* Surface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 210 33% 17%;
+    
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 45%;
+    
+    /* Interactive Elements */
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 204 89% 61%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Footer */
+    --footer: 0 0% 13%; /* Dark gray #222 */
+    --footer-foreground: 0 0% 100%;
+    
+    /* Shadows & Effects */
+    --shadow-professional: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-card: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --gradient-hero: linear-gradient(135deg, hsl(210 33% 17%), hsl(210 40% 22%));
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
